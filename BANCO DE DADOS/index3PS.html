@@ -163,11 +163,14 @@
         <select id="prv">
 
             <option value="">-Selecione-</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="direcionador de fluxo">Direcionador de fluxo</option>
+            <option value="coleta de água">Coleta de água</option>
+            <option value="forros das edificações">Forros das edificações</option>
+            <option value="placas de comunicação">Placas de comunicação</option>
+            <option value="portões de acesso">Portões de acesso</option>
+            <option value="água fria e esgoto">Água fria e esgoto</option>
+            <option value="barriletes">Leitura de barriletes</option>
+            <option value="hidrômetros">Leitura de hidrômetros</option>
 
         </select>
         <br/>
@@ -179,7 +182,7 @@
             <label for="não">NÃO</label>
         </p1>
         <br/>
-        <p1><strong>Locais com acúmulo de água?</strong> 
+        <p1><strong>Foi necessário abertura de YM01?</strong> 
             <input type="radio" name="textSNA" id="simA" onclick="clickSA()"> 
             <label for="simA">SIM</label>
             <input type="radio" name="textSNA" id="nãoA" checked onclick="clickNA()">
@@ -208,7 +211,7 @@
         }
 
         function clickSA() {
-            window.document.getElementById('obsA').innerHTML = '<br/> <br/> <p3><strong>Tratativas dos acúmulos de água:</strong></p3> <br/> <input type="text" name="" id="info2">'
+            window.document.getElementById('obsA').innerHTML = '<br/> <br/> <p3><strong>Informe o número das YM01 abertas:</strong></p3> <br/> <input type="text" name="" id="info2">'
         }
 
         function clickNA() {
@@ -227,6 +230,10 @@
             var eqp = text4.value
             var text5 = window.document.getElementById('local')
             var local = text5.value
+            var textpla = window.document.getElementById('plano')
+            var plano = textpla.value
+            var textprv = window.document.getElementById('prv')
+            var prv = textprv.value
 
             var sn = window.document.getElementsByName('textSN')
             var snRes = ''
@@ -238,20 +245,20 @@
                 snRes = ''
                 var text6 = window.document.getElementById('info')
                 var info = text6.value
-                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO:Realizada desinsetização nas áreas internas do(a) ${local}, conforme check list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${info}.` 
+                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO:Realizada manutenção preventiva tipo ${plano} de ${prv} no(a) ${local} conforme check list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${info}.` 
 
             } else{
                 snRes = 'Não'
-                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO:Realizada desinsetização nas áreas internas do(a) ${local}, conforme check list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${snRes}.` 
+                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO:Realizada manutenção preventiva tipo ${plano} de ${prv} no(a) ${local} conforme check list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${snRes}.` 
             }
 
             if (snA[0].checked) {
                 snARes = ''
                 var text7 = window.document.getElementById('info2')
                 var info2 = text7.value
-                window.document.getElementById('mascA').innerHTML = `OBSERVAÇÃO: ${info2}.`
+                window.document.getElementById('mascA').innerHTML = `NECESSIDADE DE ABERTURA DE YM01: Sim, ${info2}.`
             } else{
-                window.document.getElementById('mascA').innerHTML = 'OBSERVAÇÃO: Não foram encontrados locais com acúmulo de água parada. Por conta disso não foi realizada a aplicação de larvicida.'
+                window.document.getElementById('mascA').innerHTML = 'NECESSIDADE DE ABERTURA DE YM01: Não.'
             }
 
 
