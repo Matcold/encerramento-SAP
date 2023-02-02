@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASCARA DE ENCERRAMENTO</title>
+    <link rel="icon" type="imagem/png" href="logo.png">
+    <style>
+
+        body {
+            background-image: url('back.png');
+            background-size: 1500px;
+        }
+
+        div#box {
+            position:relative;
+            margin-left: 10px;
+            
+        }
+
+        h1 {
+            font: normal 15pt Arial;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        p1 {
+            color: rgb(0, 0, 0);
+            font: normal 12pt Arial;
+            margin-left: 10px;
+        }
+
+        p2 {
+            font: normal 12pt Arial;
+            margin-left: 10px;
+        }
+
+        input#name{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#matr{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#eqp{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#esca{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#date{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#hora{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#loco{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#equip{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#defeito{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#causa{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#atua{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#subst{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#quant{
+            width: 300px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#obs{
+            width: 550px;
+            display: block;
+            margin-left: 10px;
+            background-color: rgb(247, 227, 227);
+            border-radius: 10px;
+
+        }
+        input#confirmar{
+            font: normal 15pt Arial;
+            width: 555px;
+            height: 50px;
+            display: block;
+            margin-top: 20px;
+            margin-left: 10px;
+            background-color: rgb(183, 238, 176);
+            border-radius: 10px;
+        }
+        input#reset{
+            font: normal 15pt Arial;
+            width: 555px;
+            height: 35px;
+            display: block;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: rgb(176, 220, 238);
+            border-radius: 10px;
+        }
+        div#masc {
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 3px solid #333;
+            height: 450px;
+            width: 555px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>Texto de encerramento SAP</h1>
+
+    <div   id="box">
+
+        <p1>Nome do colaborador:</p1> <input type="text" name="" id="name">
+        <p1>Número pessoal:</p1> <input type="text" name="" id="matr">
+        <p1>Equipe:</p1> <input type="text" name="" id="eqp">
+        <p1>Escala:</p1> <input type="text" name="" id="esca">
+        <p1>Data de execução:</p1> <input type="text" name="" id="date">
+        <p1>Hora:</p1> <input type="text" name="" id="hora">
+        <p1>Local:</p1> <input type="text" name="" id="loco">
+        <p1>Equipamento:</p1> <input type="text" name="" id="equip">
+        <p1>Defeito:</p1> <input type="text" name="" id="defeito">
+        <p1>Causa:</p1> <input type="text" name="" id="causa">
+        <p1>Atuação/Ação:</p1> <input type="text" name="" id="atua">
+        <p2>Substituição de peças?</p2> <input type="text" name="" id="subst">
+        <p1>Quantidade substituida:</p1> <input type="text" name="" id="quant">
+        <p1>Comentario adicional:</p1> <input type="text" name="" id="obs">
+        
+        <input type="button" value="Gerar texto de avaria" id="confirmar" onclick="clickT()">
+        <input type="button" value="Resetar texto" id="reset" onclick="clickR()">
+        <div id="masc"></div>
+
+    </div>
+    
+    <script>
+
+        function clickT() {
+
+            var text1 = window.document.getElementById('name')
+            var name = text1.value
+            var text01 = window.document.getElementById('matr')
+            var matr = text01.value
+            var text2 = window.document.getElementById('esca')
+            var esca = text2.value
+            var text3 = window.document.getElementById('date')
+            var date = text3.value
+            var text4 = window.document.getElementById('hora')
+            var hora = text4.value
+            var text5 = window.document.getElementById('loco')
+            var loco = text5.value
+            var text6 = window.document.getElementById('equip')
+            var equip = text6.value
+            var text7 = window.document.getElementById('defeito')
+            var defeito = text7.value
+            var text8 = window.document.getElementById('causa')
+            var causa = text8.value
+            var text8a = window.document.getElementById('subst')
+            var subst = text8a.value
+            var text8b = window.document.getElementById('quant')
+            var quant = text8b.value
+            var text9 = window.document.getElementById('atua')
+            var atua = text9.value
+            var text10 = window.document.getElementById('obs')
+            var obs = text10.value
+            var text11 = window.document.getElementById('eqp')
+            var eqp = text11.value
+
+            window.document.getElementById('masc').innerHTML = `<br/> NOME DO COLABORADOR: ${name} ${matr} ${eqp}.<br/> ESCALA: ${esca}. <br/> DATA E HORA DA ATUAÇÃO: ${date} ${hora}. <br/> LOCAL EXATO DA ATUAÇÃO: ${loco}. <br/> CONSOLE E OPERADOR DO CCO COMUNICADO: CAF. <br/> DESCRIÇÃO DA ATUAÇÃO TÉCNICA: Foi notificado em OS que o local estava com um(a) ${equip} ${defeito}. A equipe ${eqp} se deslocou até o local e após inspeção identificou a falha, oriundo de ${causa}. Em vista disso foi realizado o(a) ${atua} do equipamento e entregue a operação novamente.<br/>HOUVE SUBSTITUIÇÃO DE EQUIPAMENTOS OU PEÇAS: ${subst}.<br/> QUANTIDADE SUBSTITUÍDA: ${quant}.<br/> ORIGEM DA OCORRÊNCIA: ${causa}.<br/> OCORRÊNCIA FOI NORMALIZADA: Sim.<br/> NOTA ADICIONAL EM CASO DE RESTABELECIMENTO PARCIAL: Não.<br/> COMENTÁRIO ADICIONAL: ${obs}.<br/> ANEXOS: Não.<br/> ABERTURA DE CHAMADO: Não.<br/><br/>`.toUpperCase()
+
+        }
+
+        function clickR() {
+            window.document.getElementById('masc').innerHTML = ''.toUpperCase()
+        }
+
+    </script>
+</body>
+</html>

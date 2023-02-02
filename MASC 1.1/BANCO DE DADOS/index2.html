@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASCARA DE ENCERRAMENTO</title>
+    <link rel="icon" type="imagem/png" href="logo.png">
+    <style>
+
+        h1 {
+            font: normal 20pt Arial;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        body {
+            background-image: url('back.png');
+            background-size: 1500px;
+        }
+        
+        input#sim {
+            font: normal 10pt Arial;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(183, 238, 176);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+            
+        }
+
+        input#nao {
+            font: normal 10pt Arial;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: rgb(183, 238, 176);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Escolha o status da atuação:</h1>
+
+    <input type="button" value="Falha encontrada e atuada" id="sim" onclick="clicksim()">
+    <input type="button" value="Falha não encontrada" id="nao" onclick="clicknao()">
+
+    <script>
+
+        function clicksim(){
+            window.location.href = 'index.html'
+        }
+
+        function clicknao(){
+            window.location.href = 'index3.html'
+        }
+
+    </script>
+
+</body>
+</html>
