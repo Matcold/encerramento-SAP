@@ -183,11 +183,11 @@
                 snRes = ''
                 var text6 = window.document.getElementById('info')
                 var info = text6.value
-                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO: Realizada desinsetização no trem ${trem}, conforme check-list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${info}.` 
+                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO: Realizada desinsetização no trem ${trem}, conforme check-list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${info}.`.toUpperCase() 
 
             } else{
                 snRes = 'Não'
-                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO: Realizada desinsetização no trem ${trem}, conforme check-list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${snRes}` 
+                window.document.getElementById('masc').innerHTML = `<br/> EQUIPE DE ATUAÇÃO: ${name} ${matr} ${eqp}.<br/> DATA DA EXECUÇÃO: ${date}.<br/> DESCRIÇÃO DA ATUAÇÃO: Realizada desinsetização no trem ${trem}, conforme check-list em anexo. <br/> PONTOS DE ATENÇÃO ENCONTRADOS: ${snRes}`.toUpperCase()
             }
         }
 

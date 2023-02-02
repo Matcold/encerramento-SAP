@@ -47,6 +47,18 @@
             background-color: rgb(183, 238, 176);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
         }
+        div#y8{
+            width: 60px;
+            height: 17px;
+            background-color: rgb(255, 251, 0);
+            border-radius: 50px;
+            border: 2px solid #333;
+            position: absolute;
+            margin-left: 135px;
+            text-align: center;
+            font: normal 12pt Arial;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
 
     </style>
 </head>
@@ -55,8 +67,22 @@
     <h1>Escolha o tipo de ordem:</h1>
 
     <input type="button" value="YM01/YM02" id="y1" onclick="clicky1()">
-    <input type="button" value="YM03" id="y3" onclick="clicky3()">
-    <input type="button" value="YM08" id="y8" onclick="clicky8()">
+    
+
+    <div> 
+
+        <input type="button" value="YM03" id="y3" onclick="clicky3()">
+
+    </div>
+
+    <div> 
+
+        <div id="y8"><strong>NOVO</strong></div>
+
+        <input type="button" value="YM08" id="y8" onclick="clicky8()">
+
+    </div>
+
     <div id="info"></div>
     
     <script>
@@ -68,8 +94,7 @@
             window.location.href = 'BANCO DE DADOS/index3y.html'
         }
         function clicky8(){
-            window.document.getElementById('info').style = 'margin-top: 50px; width: 500px; height: 25px; border-radius: 10px; border: 3px solid #333; background-color: rgb(255, 255, 255); background-color: yellow;'
-            window.document.getElementById('info').innerText = 'A opção de YM08 ainda está sendo desenvolvida!'
+            window.location.href = 'BANCO DE DADOS/index8y.html'
         }
 
 

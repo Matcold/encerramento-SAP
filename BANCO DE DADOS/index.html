@@ -242,12 +242,12 @@
             var text11 = window.document.getElementById('eqp')
             var eqp = text11.value
 
-            window.document.getElementById('masc').innerHTML = `<br/> NOME DO COLABORADOR: ${name} ${matr} ${eqp}.<br/> ESCALA: ${esca}. <br/> DATA E HORA DA ATUAÇÃO: ${date} ${hora}. <br/> LOCAL EXATO DA ATUAÇÃO: ${loco}. <br/> CONSOLE E OPERADOR DO CCO COMUNICADO: CAF. <br/> DESCRIÇÃO DA ATUAÇÃO TÉCNICA: Foi notificado em OS que o local estava com um(a) ${equip} ${defeito}. A equipe ${eqp} se deslocou até o local e após inspeção identificou a falha, oriundo de ${causa}. Em vista disso foi realizado o(a) ${atua} do equipamento e entregue a operação novamente.<br/>HOUVE SUBSTITUIÇÃO DE EQUIPAMENTOS OU PEÇAS: ${subst}.<br/> QUANTIDADE SUBSTITUÍDA: ${quant}.<br/> ORIGEM DA OCORRÊNCIA: ${causa}.<br/> OCORRÊNCIA FOI NORMALIZADA: Sim.<br/> NOTA ADICIONAL EM CASO DE RESTABELECIMENTO PARCIAL: Não.<br/> COMENTÁRIO ADICIONAL: ${obs}.<br/> ANEXOS: Não.<br/> ABERTURA DE CHAMADO: Não.<br/><br/>`
+            window.document.getElementById('masc').innerHTML = `<br/> NOME DO COLABORADOR: ${name} ${matr} ${eqp}.<br/> ESCALA: ${esca}. <br/> DATA E HORA DA ATUAÇÃO: ${date} ${hora}. <br/> LOCAL EXATO DA ATUAÇÃO: ${loco}. <br/> CONSOLE E OPERADOR DO CCO COMUNICADO: CAF. <br/> DESCRIÇÃO DA ATUAÇÃO TÉCNICA: Foi notificado em OS que o local estava com um(a) ${equip} ${defeito}. A equipe ${eqp} se deslocou até o local e após inspeção identificou a falha, oriundo de ${causa}. Em vista disso foi realizado o(a) ${atua} do equipamento e entregue a operação novamente.<br/>HOUVE SUBSTITUIÇÃO DE EQUIPAMENTOS OU PEÇAS: ${subst}.<br/> QUANTIDADE SUBSTITUÍDA: ${quant}.<br/> ORIGEM DA OCORRÊNCIA: ${causa}.<br/> OCORRÊNCIA FOI NORMALIZADA: Sim.<br/> NOTA ADICIONAL EM CASO DE RESTABELECIMENTO PARCIAL: Não.<br/> COMENTÁRIO ADICIONAL: ${obs}.<br/> ANEXOS: Não.<br/> ABERTURA DE CHAMADO: Não.<br/><br/>`.toUpperCase()
 
         }
 
         function clickR() {
-            window.document.getElementById('masc').innerHTML = ''
+            window.document.getElementById('masc').innerHTML = ''.toUpperCase()
         }
 
     </script>
